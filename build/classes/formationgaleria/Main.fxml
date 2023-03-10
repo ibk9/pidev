@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="509.0" prefWidth="1012.0" styleClass="root" stylesheets="@../CssStyle/CssStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="formationgaleria.MainController">
+      <VBox layoutX="18.0" layoutY="62.0" prefHeight="270.0" prefWidth="76.0" spacing="23.0">
+         <children>
+            <Label fx:id="lartiste" layoutX="10.0" layoutY="10.0" text="Artiste">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="ltitre" layoutX="10.0" layoutY="10.0" text="Titre">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="cbtype" layoutX="10.0" layoutY="89.0" text="Type">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="llien" layoutX="10.0" layoutY="79.0" text="Lien">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="ldate" layoutX="10.0" layoutY="45.0" text="Date">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="ldescription" text="Description">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="109.0" layoutY="57.0" prefHeight="276.0" prefWidth="133.0" spacing="15.0">
+         <children>
+            <TextField fx:id="tfartiste" layoutX="10.0" layoutY="10.0" promptText="Artiste">
+            <font>
+               <Font size="14.0" />
+            </font></TextField>
+            <TextField fx:id="tftitre" layoutX="10.0" layoutY="47.0" promptText="Titre de formation">
+            <font>
+               <Font size="14.0" />
+            </font></TextField>
+               <ComboBox fx:id="cboxtype" layoutX="14.0" layoutY="22.0" prefWidth="150.0" promptText="Type" styleClass="searchbar" />
+            <TextField fx:id="tflien" layoutX="10.0" layoutY="85.0" promptText="Lien">
+            <font>
+               <Font size="14.0" />
+            </font></TextField>
+            <DatePicker fx:id="dpdate" promptText="Date" />
+         <TextArea fx:id="tadescription" prefHeight="200.0" prefWidth="200.0">
+            <font>
+               <Font size="14.0" />
+            </font></TextArea>
+         </children>
+      </VBox>
+      <TableView fx:id="tvformation" layoutX="261.0" layoutY="19.0" prefHeight="443.0" prefWidth="739.0">
+        <columns>
+         <TableColumn fx:id="clnid" prefWidth="55.0" text="ID" visible="false" />
+            <TableColumn fx:id="clnartiste" prefWidth="84.66668701171875" text="Artiste" />
+            <TableColumn fx:id="clntitre" prefWidth="88.66668701171875" text="Titre" />
+            <TableColumn fx:id="clntype" prefWidth="108.00006103515625" text="Type" />
+            <TableColumn fx:id="clnlien" prefWidth="200.0" text="Lien" />
+            <TableColumn fx:id="clndate" prefWidth="106.0" text="Date" />
+            <TableColumn fx:id="clndescription" prefWidth="152.6666259765625" text="Description" />
+         <TableColumn fx:id="clnarchive" prefWidth="55.0" text="Archive" visible="false" />
+          <TableColumn fx:id="clnartid" prefWidth="55.0" text="ID_Artiste" visible="false" />
+        </columns>
+      </TableView>
+      <Button id="ajouter" fx:id="btnadd" contentDisplay="TEXT_ONLY" layoutX="13.0" layoutY="370.0" mnemonicParsing="false" onAction="#insertFormation" prefHeight="31.0" prefWidth="71.0" styleClass="ajouter" stylesheets="@../CssStyle/CssStyle.css" text="Ajouter" />
+      <Button id="modifier" fx:id="btnedit" contentDisplay="TEXT_ONLY" layoutX="95.0" layoutY="370.0" mnemonicParsing="false" onAction="#updateFormation" prefHeight="31.0" prefWidth="71.0" styleClass="modifier" stylesheets="@../CssStyle/CssStyle.css" text="Modifier" />
+      <Button id="supprimer" fx:id="btnarchive" contentDisplay="TEXT_ONLY" layoutX="178.0" layoutY="370.0" mnemonicParsing="false" onAction="#archiveSelectedRow" prefHeight="31.0" prefWidth="71.0" styleClass="archiver" stylesheets="@../CssStyle/CssStyle.css" text="Archiver" />
+      <Button fx:id="btnsearch" contentDisplay="TEXT_ONLY" layoutX="13.0" layoutY="426.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="71.0" styleClass="search" stylesheets="@../CssStyle/CssStyle.css" text="Chercher" />
+   <Button fx:id="btnreset" contentDisplay="TEXT_ONLY" layoutX="177.0" layoutY="425.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="71.0" styleClass="reset" stylesheets="@../CssStyle/CssStyle.css" text="Reset" />
+   <Button id="Stats" fx:id="btnstats" contentDisplay="TEXT_ONLY" layoutX="920.0" layoutY="462.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="71.0" styleClass="stat" stylesheets="@../CssStyle/CssStyle.css" text="Stats" />
+      <ComboBox fx:id="cboxcat" layoutX="96.0" layoutY="427.0" prefHeight="29.0" prefWidth="71.0" promptText="Type" styleClass="searchbar" />
+</AnchorPane>
