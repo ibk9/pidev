@@ -1,0 +1,153 @@
+.root{
+-fx-background-image:url('../image/6210.jpg');
+-fx-background-size:cover;
+}
+.ajouter{
+/*-fx-background-image:url('../image/add.png');
+-fx-background-size:stretch;*/
+-fx-background-color: linear-gradient(to bottom, rgba(253, 186, 200, 0.8), rgba(253, 186, 200, 0.2)), linear-gradient(to right, rgba(190, 234, 255, 0.8), rgba(190, 234, 255, 0.2));
+-fx-background-insets: 0 1 0 1;
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+.modifier{
+/*-fx-background-image:url('../image/edit.png');
+-fx-background-size:stretch;*/
+-fx-background-color: linear-gradient(to bottom, rgba(253, 186, 200, 0.8), rgba(253, 186, 200, 0.2)), linear-gradient(to right, rgba(190, 234, 255, 0.8), rgba(190, 234, 255, 0.2));
+-fx-background-insets: 0 1 0 1;
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+.suppresion {
+/* -fx-background-image:url('../image/delete.png');
+-fx-background-size:stretch;*/
+-fx-background-color: linear-gradient(to bottom, rgba(253, 186, 200, 0.8), rgba(253, 186, 200, 0.2)), linear-gradient(to right, rgba(190, 234, 255, 0.8), rgba(190, 234, 255, 0.2));
+-fx-background-insets: 0 1 0 1;
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+.archiver{
+/*-fx-background-image:url('../image/archive.png');
+-fx-background-size:stretch;*/
+-fx-background-color: linear-gradient(to bottom, rgba(253, 186, 200, 0.8), rgba(253, 186, 200, 0.2)), linear-gradient(to right, rgba(190, 234, 255, 0.8), rgba(190, 234, 255, 0.2));
+-fx-background-insets: 0 1 0 1;
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+.search {
+/* -fx-background-image:url('../image/search-button-png-md.png');
+-fx-background-size:stretch;*/
+-fx-background-color: linear-gradient(to bottom, rgba(253, 186, 200, 0.8), rgba(253, 186, 200, 0.2)), linear-gradient(to right, rgba(190, 234, 255, 0.8), rgba(190, 234, 255, 0.2));
+-fx-background-insets: 0 1 0 1;
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+.reset {
+/* -fx-background-image:url('../image/reset.png');
+-fx-background-size:stretch;*/
+-fx-background-color: linear-gradient(to bottom, rgba(253, 186, 200, 0.8), rgba(253, 186, 200, 0.2)), linear-gradient(to right, rgba(190, 234, 255, 0.8), rgba(190, 234, 255, 0.2));
+-fx-background-insets: 0 1 0 1;
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+.stat {
+-fx-background-color: linear-gradient(to bottom, rgba(253, 186, 200, 0.8), rgba(253, 186, 200, 0.2)), linear-gradient(to right, rgba(190, 234, 255, 0.8), rgba(190, 234, 255, 0.2));
+-fx-background-insets: 0 1 0 1;
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+.searchbar {
+-fx-background-color: linear-gradient(to bottom, rgba(253, 186, 200, 0.8), rgba(253, 186, 200, 0.2)), linear-gradient(to right, rgba(190, 234, 255, 0.8), rgba(190, 234, 255, 0.2));
+-fx-background-insets: 0 1 0 1;
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+.table-view {
+    -fx-background-color: transparent;
+    -fx-font-size: 14px;
+}
+.table-row-cell {
+-fx-background-color: transparent;
+-fx-font-size: 14px;
+}
+
+.table-view .column-header-background .filler {
+-fx-background-color: transparent;
+}
+
+.table-view .corner {
+-fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+-fx-background-color: linear-gradient(to bottom, rgba(253, 186, 200, 0.8), rgba(253, 186, 200, 0.2)), linear-gradient(to right, rgba(190, 234, 255, 0.8), rgba(190, 234, 255, 0.2));
+-fx-background-radius: 7px 7px 0px 0px;
+-fx-background-insets: 0 11px 0 0;
+-fx-padding: 0 0 5px 0;
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+.table-view .column-header {
+-fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+-fx-border-color: transparent;
+-fx-padding: 2 0 2 10px;
+}
+
+.table-row-cell: hover {
+-fx-background-color: rgba(253, 186, 200, 0.6);
+-fx-text-background-color: aliceblue;
+}
+
+.table-row-cell: odd{
+ -fx-background-radius: 7px 7px 0px 0px;
+-fx-background-color: rgba(253, 186, 200, 0.6);
+-fx-background-insets: 0 11px 0 0;
+-fx-padding: 0.0em;
+}
+
+.table-row-cell: even{
+-fx-background-radius: 7px 7px 0px 0px;
+-fx-background-color: rgba(190, 234, 255, 0.6);
+-fx-background-insets: 0 11px 0 0;
+-fx-padding: 0.0em;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+-fx-background-color: transparent;
+}
+
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+-fx-opacity: 0;
+-fx-padding: 2;
+-fx-background-color: transparent;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical .thumb,
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+-fx-background-color: linear-gradient(to bottom, rgba(253, 186, 200, 0.8), rgba(253, 186, 200, 0.2)), linear-gradient(to right, rgba(190, 234, 255, 0.8), rgba(190, 234, 255, 0.2));
+-fx-background-insets: 0 1 0 1;
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+.combo-box .list-cell {
+-fx-background-color: linear-gradient(to bottom, rgba(253, 186, 200, 0.8), rgba(253, 186, 200, 0.2)), linear-gradient(to right, rgba(190, 234, 255, 0.8), rgba(190, 234, 255, 0.2));
+-fx-background-insets: 0 1 0 1;
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+.text-field {
+    -fx-background-color: linear-gradient(to bottom, rgba(253, 186, 200, 0.8), rgba(253, 186, 200, 0.2)), linear-gradient(to right, rgba(190, 234, 255, 0.8), rgba(190, 234, 255, 0.2));
+    -fx-background-insets: 0 1 0 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+.text-area .content {
+    -fx-background-color: linear-gradient(to bottom, rgba(253, 186, 200, 0.8), rgba(253, 186, 200, 0.2)), linear-gradient(to right, rgba(190, 234, 255, 0.8), rgba(190, 234, 255, 0.2));
+    -fx-background-insets: 0 1 0 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+    -fx-font-size: 14px;
+    -fx-text-fill: black;
+}
+.date-picker {
+    -fx-background-color: linear-gradient(to bottom, rgba(253, 186, 200, 0.8), rgba(253, 186, 200, 0.2)), linear-gradient(to right, rgba(190, 234, 255, 0.8), rgba(190, 234, 255, 0.2));
+    -fx-background-insets: 0 1 0 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}

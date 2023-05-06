@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../CssStyle/CssStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="formationgaleria.InterfaceLeadController">
+   <children>
+      <Button fx:id="formation" layoutX="205.0" layoutY="135.0" mnemonicParsing="false" prefHeight="135.0" prefWidth="395.0" styleClass="ajouter" text="Formation" />
+      <Button fx:id="publication" layoutX="205.0" mnemonicParsing="false" prefHeight="135.0" prefWidth="395.0" styleClass="ajouter" text="Publication" />
+      <Button fx:id="reclamation" layoutX="205.0" layoutY="270.0" mnemonicParsing="false" prefHeight="135.0" prefWidth="395.0" styleClass="ajouter" stylesheets="@../CssStyle/CssStyle.css" text="Reclamation" />
+      <Pane prefHeight="400.0" prefWidth="200.0" stylesheets="@../CssStyle/CssStyle.css">
+         <effect>
+            <ImageInput />
+         </effect>
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

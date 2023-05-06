@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="519.0" prefWidth="790.0" styleClass="root" stylesheets="@../CssStyle/CssStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="formationgaleria.MainEController">
+      <Button fx:id="btnsearch" contentDisplay="TEXT_ONLY" layoutX="251.0" layoutY="29.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="71.0" styleClass="search" stylesheets="@../CssStyle/CssStyle.css" text="Chercher" />
+      <ComboBox fx:id="cboxcat" layoutX="332.0" layoutY="32.0" prefHeight="25.0" prefWidth="129.0" promptText="Type" styleClass="searchbar" />
+      <Button fx:id="btnreset" contentDisplay="TEXT_ONLY" layoutX="470.0" layoutY="29.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="71.0" styleClass="reset" stylesheets="@../CssStyle/CssStyle.css" text="Reset" />
+
+      <TableView fx:id="tvformation" layoutX="17.0" layoutY="81.0" prefHeight="427.0" prefWidth="759.0">
+    <columns>
+        <TableColumn fx:id="clnid" prefWidth="55.0" text="ID" visible="false" />
+        <TableColumn fx:id="clnartiste" prefWidth="81.33334636688232" text="Artiste" />
+        <TableColumn fx:id="clntitre" minWidth="0.0" prefWidth="89.99999237060547" text="Titre" />
+        <TableColumn fx:id="clntype" minWidth="0.0" prefWidth="122.00003051757812" text="Type" />
+        <TableColumn fx:id="clnlien" prefWidth="210.6666259765625" text="Lien" />
+        <TableColumn fx:id="clndate" prefWidth="101.33331298828125" text="Date" />
+        <TableColumn fx:id="clnarchive" prefWidth="55.0" text="Archive" visible="false" />
+        <TableColumn fx:id="clndescription" prefWidth="149.3333740234375" text="Description" />
+        <TableColumn fx:id="clnartid" prefWidth="55.0" text="ID_Artiste" visible="false" />
+    </columns>
+</TableView>
+</AnchorPane>

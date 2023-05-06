@@ -1,0 +1,45 @@
+<html><head>
+  <SCRIPT src="./web-files/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'FormationGaleria.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iRm9ybWF0aW9uR2FsZXJpYS5qbmxwIj4NCiAgPGluZm9ybWF0aW9uPg0KICAgIDx0aXRsZT5Gb3JtYXRpb25HYWxlcmlhPC90aXRsZT4NCiAgICA8dmVuZG9yPkRFTEw8L3ZlbmRvcj4NCiAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+DQogICAgPG9mZmxpbmUtYWxsb3dlZC8+DQogIDwvaW5mb3JtYXRpb24+DQogIDxyZXNvdXJjZXM+DQogICAgPGoyc2UgdmVyc2lvbj0iMS42KyIgaHJlZj0iaHR0cDovL2phdmEuc3VuLmNvbS9wcm9kdWN0cy9hdXRvZGwvajJzZSIvPg0KICAgIDxqYXIgaHJlZj0iRm9ybWF0aW9uR2FsZXJpYS5qYXIiIHNpemU9IjY4ODE3MSIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGVjbGlwc2VsaW5rLmphciIgc2l6ZT0iODQ3ODc3NiIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGphdmF4LmluamVjdC0xLmphciIgc2l6ZT0iMjQ5NyIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGphdmF4LnBlcnNpc3RlbmNlXzIuMS4wLnYyMDEzMDQyNDEyMTMuamFyIiBzaXplPSIxNjQ2MzciIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxqYXhiLWFwaS0yLjIuMi5qYXIiIHNpemU9IjEwNTEzNCIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGpjb21tb24tMS4wLjIzLmphciIgc2l6ZT0iMzMwMjQ2IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcamZyZWVjaGFydC0xLjAuMTkuamFyIiBzaXplPSIxNTcwMTU3IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcbXNzcWwtamRiYy02LjEuMC5qcmU4LmphciIgc2l6ZT0iNzY2MDkzIiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcbXlzcWwtY29ubmVjdG9yLWphdmEtNS4xLjIzLWJpbi5qYXIiIHNpemU9IjgzNDEyNiIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXG9yZy5lY2xpcHNlLnBlcnNpc3RlbmNlLmpwYS5qcHFsXzIuNS4yLnYyMDE0MDMxOS05YWQ2YWJkLmphciIgc2l6ZT0iMTM2NjI0NyIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICA8L3Jlc291cmNlcz4NCiAgPGFwcGxldC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0iY29tLmphdmFmeC5tYWluLk5vSmF2YUZYRmFsbGJhY2siICBuYW1lPSJGb3JtYXRpb25HYWxlcmlhIiA+DQogICAgPHBhcmFtIG5hbWU9InJlcXVpcmVkRlhWZXJzaW9uIiB2YWx1ZT0iOC4wKyIvPg0KICA8L2FwcGxldC1kZXNjPg0KICA8amZ4OmphdmFmeC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0iZm9ybWF0aW9uZ2FsZXJpYS5JbnRlcmZhY2VMZWFkIiAgbmFtZT0iRm9ybWF0aW9uR2FsZXJpYSIgLz4NCiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+DQo8L2pubHA+DQo='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedformationgaleria() {
+        dtjava.embed(
+            {
+                id : 'formationgaleria',
+                url : 'FormationGaleria.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iRm9ybWF0aW9uR2FsZXJpYS5qbmxwIj4NCiAgPGluZm9ybWF0aW9uPg0KICAgIDx0aXRsZT5Gb3JtYXRpb25HYWxlcmlhPC90aXRsZT4NCiAgICA8dmVuZG9yPkRFTEw8L3ZlbmRvcj4NCiAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+DQogICAgPG9mZmxpbmUtYWxsb3dlZC8+DQogIDwvaW5mb3JtYXRpb24+DQogIDxyZXNvdXJjZXM+DQogICAgPGoyc2UgdmVyc2lvbj0iMS42KyIgaHJlZj0iaHR0cDovL2phdmEuc3VuLmNvbS9wcm9kdWN0cy9hdXRvZGwvajJzZSIvPg0KICAgIDxqYXIgaHJlZj0iRm9ybWF0aW9uR2FsZXJpYS5qYXIiIHNpemU9IjY4ODE3MSIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGVjbGlwc2VsaW5rLmphciIgc2l6ZT0iODQ3ODc3NiIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGphdmF4LmluamVjdC0xLmphciIgc2l6ZT0iMjQ5NyIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGphdmF4LnBlcnNpc3RlbmNlXzIuMS4wLnYyMDEzMDQyNDEyMTMuamFyIiBzaXplPSIxNjQ2MzciIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxqYXhiLWFwaS0yLjIuMi5qYXIiIHNpemU9IjEwNTEzNCIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGpjb21tb24tMS4wLjIzLmphciIgc2l6ZT0iMzMwMjQ2IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcamZyZWVjaGFydC0xLjAuMTkuamFyIiBzaXplPSIxNTcwMTU3IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcbXNzcWwtamRiYy02LjEuMC5qcmU4LmphciIgc2l6ZT0iNzY2MDkzIiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcbXlzcWwtY29ubmVjdG9yLWphdmEtNS4xLjIzLWJpbi5qYXIiIHNpemU9IjgzNDEyNiIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXG9yZy5lY2xpcHNlLnBlcnNpc3RlbmNlLmpwYS5qcHFsXzIuNS4yLnYyMDE0MDMxOS05YWQ2YWJkLmphciIgc2l6ZT0iMTM2NjI0NyIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICA8L3Jlc291cmNlcz4NCiAgPGFwcGxldC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0iY29tLmphdmFmeC5tYWluLk5vSmF2YUZYRmFsbGJhY2siICBuYW1lPSJGb3JtYXRpb25HYWxlcmlhIiA+DQogICAgPHBhcmFtIG5hbWU9InJlcXVpcmVkRlhWZXJzaW9uIiB2YWx1ZT0iOC4wKyIvPg0KICA8L2FwcGxldC1kZXNjPg0KICA8amZ4OmphdmFmeC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0iZm9ybWF0aW9uZ2FsZXJpYS5JbnRlcmZhY2VMZWFkIiAgbmFtZT0iRm9ybWF0aW9uR2FsZXJpYSIgLz4NCiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+DQo8L2pubHA+DQo='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedformationgaleria);
+</script>
+
+</head><body>
+<h2>Test page for <b>FormationGaleria</b></h2>
+  <b>Webstart:</b> <a href='FormationGaleria.jnlp' onclick="return launchApplication('FormationGaleria.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>
