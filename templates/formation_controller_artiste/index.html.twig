@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Formation index{% endblock %}
+
+{% block body %}
+    <h1>Formation index</h1>
+
+    {% block form %}
+        {{ form_start(form, {'action': path('app_formation_controller_artiste_index')}) }}
+        {{ form_label(form.type) }}
+        {{ form_widget(form.type) }}
+        {{ form_label(form.artiste) }}
+        {{ form_widget(form.artiste) }}
+        <button class="btn">{{ button_label|default('Search') }}</button>
+        {{ form_end(form) }}
+    {% endblock %}
+
+   <table class="table">
+        <thead>
+            <tr>
+                <th>Titre</th>
+                <th>Type</th>
+                 <th>Artiste</th>
+                <th>Description</th>
+                <th>Lien</th>
+                <th>Date</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for formation in formations %}
+        
+            <tr>
+                <td>{{ formation.titre }}</td>
+                <td>{{ formation.type }}</td>
+                <td>{{ formation.artiste }}</td>
+                <td>{{ formation.description }}</td>
+                <td><a href="{{ formation.lien|default('javascript:void(0)')|raw }}">{{ formation.lien|default('N/A') }}</a></td>
+                <td>{{ formation.date ? formation.date|date('Y-m-d') : '' }}</td>
+                <td>
+                    <a href="{{ path('app_formation_controller_artiste_show', {'id': formation.id}) }}">show</a>
+                    <a href="{{ path('app_formation_controller_artiste_edit', {'id': formation.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {{ knp_pagination_render(pagination, '@KnpPaginator/Pagination/sliding.html.twig') }}
+    <a href="{{ path('app_formation_controller_artiste_new') }}">Create new</a>
+{% endblock %}

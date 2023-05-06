@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Formation{% endblock %}
+
+{% block body %}
+    <h1>Create new Formation</h1>
+
+    {{ include('formation_controller_artiste/_form.html.twig') }}
+
+    <a href="{{ path('app_formation_controller_artiste_index') }}">back to list</a>
+{% endblock %}

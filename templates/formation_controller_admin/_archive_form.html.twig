@@ -1,0 +1,4 @@
+<form method="post" action="{{ path('app_formation_controller_admin_archive', {'id': formation.id}) }}" onsubmit="return confirm('Are you sure you want to archive this item?');">
+    <input type="hidden" name="_token" value="{{ csrf_token('archive' ~ formation.id) }}">
+    <button class="btn">Archive</button>
+</form>

@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Formation{% endblock %}
+
+{% block body %}
+    <h1>Formation</h1>
+
+    <table class="table">
+        <tbody>
+            
+            <tr>
+                <th>Titre</th>
+                <td>{{ formation.titre }}</td>
+            </tr>
+            <tr>
+                <th>Type</th>
+                <td>{{ formation.type }}</td>
+            </tr>
+            <tr>
+                <th>Artiste</th>
+                <td>{{ formation.artiste }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ formation.description }}</td>
+            </tr>
+            <tr>
+                <th>Lien</th>
+                <td><a href="{{ formation.lien|default('javascript:void(0)')|raw }}">{{ formation.lien|default('N/A') }}</a></td>
+            </tr>
+            <tr>
+                <th>Date</th>
+                <td>{{ formation.date ? formation.date|date('Y-m-d') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_formation_controller_admin_index') }}">back to list</a>
+
+    <a href="{{ path('app_formation_controller_admin_edit', {'id': formation.id}) }}">edit</a>
+
+    {{ include('formation_controller_admin/_archive_form.html.twig') }}
+{% endblock %}
